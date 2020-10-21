@@ -14,13 +14,11 @@ namespace Ejercicio1
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
-            
         }
-
-        public List<string> listaLibros = new List<string>();
 
         public void limpiarPantalla()
         {
@@ -31,43 +29,47 @@ namespace Ejercicio1
             cbxImportado.Checked = false;
             txtPrecio.Text = "";
         }
-        public string cadastrarLibro()
+        public void cadastrarLibro()
         {
-            string Nombre = txtNombre.Text + " - ";
-            string Autor = txtAutor.Text + " - ";
-            string Genero = cbxGenero.Text + " - ";
-            string Paginas = txtPaginas.Text + " - ";
-            string Precio = txtPrecio.Text;
-            string Importado;
 
-            campoVacio(txtNombre);
-            campoVacio(txtAutor);
-            campoVacio(txtPaginas);
-            campoVacio(txtPrecio);
+            Libro libro = new Libro();
 
-            if (cbxImportado.Checked == false)
+            libro.Nombre = txtNombre.Text + " - ";
+            libro.Autor = txtAutor.Text + " - ";
+            libro.Genero = cbxGenero.Text + " - ";
+            libro.Paginas = txtPaginas.Text + " - ";
+            libro.Importado = verificarImportado(cbxImportado) + " - ";
+            libro.Precio = txtPrecio.Text;
+
+            string info = libro.Nombre + libro.Autor + libro.Genero + libro.Paginas + libro.Importado + libro.Precio;
+
+            lbxLista.Items.Add(info);
+
+        }
+
+
+        public string verificarImportado(CheckBox checkBox)
+        {
+            if (checkBox.Checked == false)
             {
-                Importado = "Nacional - ";
+                return "Nacional - ";
             }
             else
             {
-                Importado = "Importado - ";
+                return "Importado - ";
             }
-
-
-            return (Nombre +
-                    Autor +
-                    Genero +
-                    Paginas +
-                    Importado +
-                    Precio);
         }
 
-        public void campoVacio (TextBox campo)
+        public bool campoVacio (TextBox campo)
         {
-            if(campo.Text == "")
+            if (campo.Text == "")
             {
                 MessageBox.Show("Hay un campo vacio!");
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
 
@@ -133,9 +135,7 @@ namespace Ejercicio1
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            lbxLista.DataSource = listaLibros;
-            string nuevoItemLista = cadastrarLibro();         
-            listaLibros.Add(nuevoItemLista);
+            cadastrarLibro();         
             limpiarPantalla();
 
         }
