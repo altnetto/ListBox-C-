@@ -1,0 +1,10 @@
+C:\Users\Altieres\source\repos\TP6SchincariolNettoAltieres\Ejercicio1\bin\Debug\Ejercicio1.exe.config
+C:\Users\Altieres\source\repos\TP6SchincariolNettoAltieres\Ejercicio1\bin\Debug\Ejercicio1.exe
+C:\Users\Altieres\source\repos\TP6SchincariolNettoAltieres\Ejercicio1\bin\Debug\Ejercicio1.pdb
+C:\Users\Altieres\source\repos\TP6SchincariolNettoAltieres\Ejercicio1\obj\Debug\Ejercicio1.csprojAssemblyReference.cache
+C:\Users\Altieres\source\repos\TP6SchincariolNettoAltieres\Ejercicio1\obj\Debug\Ejercicio1.Form1.resources
+C:\Users\Altieres\source\repos\TP6SchincariolNettoAltieres\Ejercicio1\obj\Debug\Ejercicio1.Properties.Resources.resources
+C:\Users\Altieres\source\repos\TP6SchincariolNettoAltieres\Ejercicio1\obj\Debug\Ejercicio1.csproj.GenerateResource.cache
+C:\Users\Altieres\source\repos\TP6SchincariolNettoAltieres\Ejercicio1\obj\Debug\Ejercicio1.csproj.CoreCompileInputs.cache
+C:\Users\Altieres\source\repos\TP6SchincariolNettoAltieres\Ejercicio1\obj\Debug\Ejercicio1.exe
+C:\Users\Altieres\source\repos\TP6SchincariolNettoAltieres\Ejercicio1\obj\Debug\Ejercicio1.pdb
